@@ -1,0 +1,31 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 1s ease, opacity 1s ease;
+    overflow: hidden; /* Ensures no scrollbars appear */
+  }
+  
+  .preloader video {
+    position: absolute; /* Allows the video to cover the entire parent div */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the entire area */
+  }
+  
+  
+  .preloader.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+  }
+  
