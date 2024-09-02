@@ -20,7 +20,7 @@ export default function Landing() {
   };
 
   return (
-    <div>
+    <div className='bg-gradient-to-bl from-violet-300 via-white to bg-violet-300'>
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <a className="flex items-center text-gray-900 md:mb-0 size-28 md:size-[200px]">
           <img src={logo} />
@@ -50,7 +50,7 @@ export default function Landing() {
           <h1 className="md:hidden text-3xl font-black mb-4 font-[Poppins] text-black ml-9">GET NOTIFIED <br />
             WHEN WE WILL <br/> LAUNCH!</h1>
           <div className="mr-auto hidden md:flex flex-col items-center mt-12">
-            <div className="flex items-center border border-black rounded-full pl-2 pr-1 md:w-[588px] md:h-[62px]">
+            <div className="flex items-center border border-black rounded-full pl-2 pr-1 md:w-[588px] md:h-[62px] bg-white">
               <input
                 type="email"
                 placeholder="Enter your Email"
@@ -76,7 +76,7 @@ export default function Landing() {
           <img src={gif} />
         </div>
         <div className="md:hidden flex flex-col items-center mt-8">
-            <div className="flex items-center border border-black rounded-full w-[315.317px] h-[46.282px] md:w-[588px] md:h-[62px]">
+            <div className="flex items-center border border-black rounded-full w-[315.317px] h-[46.282px] md:w-[588px] md:h-[62px] bg-white">
               <input
                 type="email"
                 placeholder="Enter your Email"
